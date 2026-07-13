@@ -1,0 +1,42 @@
+flowchart TD
+    A([Start])
+    B[/"High-level description of the tool and its usage"/]
+    C[/"Assumptions"/]
+    D["Check the need to provide evidence of tool usage confidence <br/> <span style='color:blue'>LLVM-QUAL-TPL-001</span>"]
+    E{"Needed?"}
+    F["Write plan of usage <br/> <span style='color:blue'>LLVM-QUAL-TPL-002</span>"]
+    G["Provide argument / justification <br/> <span style='color:blue'>LLVM-QUAL-TPL-006</span>"]
+    H["Write tool evaluation report <br/> <span style='color:blue'>LLVM-QUAL-TPL-003</span>"]
+    I{"Confidence in the tool needed?"}
+    J["Perform tool qualification and write report <br/> <span style='color:blue'>LLVM-QUAL-TPL-004</span>"]
+    K["Provide means for verification of appropriate usage <br/> <span style='color:blue'>LLVM-QUAL-TPL-005</span>"]
+    L([End])
+
+    A --> B
+    A --> C
+    B --> D
+    C --> D
+    D --> E
+    E --> |Yes| F
+    E --> |No| G
+    F --> H
+    H --> I
+    I --> |Yes| J
+    I --> |No| K
+    J --> K
+    G --> L
+    K --> L
+
+    subgraph Info [" "]
+        direction TB
+        L1["<b><i><u>References:</u></i></b><br/><b style='color:#E36C0A'><i>IEC 61508 Part 3 - Annex H</i></b><br/><i>ISO 26262 Part 8 - Chapter 11</i>"]
+        L2["<i>See also slides 11 to 14 in AsiaLLVM 2025's <span style='color:#0563C1; text-decoration:underline;'>presentation</span></i>"]
+        
+        %% The invisible link forces L2 to render directly below L1
+        L1 ~~~ L2
+    end
+
+    style Info fill:none,stroke:none
+
+    style L1 fill:none,stroke:none,text-align:left
+    style L2 fill:none,stroke:none,text-align:left
