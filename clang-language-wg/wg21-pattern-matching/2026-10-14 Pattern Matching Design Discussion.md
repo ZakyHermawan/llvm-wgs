@@ -2,7 +2,7 @@ Pattern Matching WG21 proposal: [https\://wg21.link/p2688r6](https://wg21.link/p
 LLVM Code of Conduct: [https\://llvm.org/docs/CodeOfConduct.html](https://llvm.org/docs/CodeOfConduct.html)  
 Date: Oct 14, 2026
 
-Slide Deck for the Presentation: https://github.com/llvm/llvm-wgs/blob/main/clang-language-wg/wg21-pattern-matching/2026-10-14 Pattern Matching Slide Deck.html
+Slide Deck for the Presentation: https://github.com/llvm/llvm-wgs/blob/main/clang-language-wg/wg21-pattern-matching/2026-10-14%20Pattern%20Matching%20Slide%20Deck.html
 
 Attendees:
 
